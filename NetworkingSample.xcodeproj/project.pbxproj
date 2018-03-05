@@ -12,6 +12,10 @@
 		C956BC31204810DD009808EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C956BC2F204810DD009808EE /* Main.storyboard */; };
 		C956BC33204810DD009808EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C956BC32204810DD009808EE /* Assets.xcassets */; };
 		C956BC36204810DD009808EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C956BC34204810DD009808EE /* LaunchScreen.storyboard */; };
+		C956BC4320481172009808EE /* NetworkingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C956BC4220481172009808EE /* NetworkingHelper.swift */; };
+		C9A9C9C22049119E00224609 /* TranslatorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A9C9C12049119E00224609 /* TranslatorHelper.swift */; };
+		C9E7112A20481F870082C871 /* CryptoCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9E7112920481F870082C871 /* CryptoCurrency.swift */; };
+		C9FE20C2204D348600B77BCE /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FE20C1204D348600B77BCE /* ImageHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C956BC32204810DD009808EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C956BC35204810DD009808EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C956BC37204810DD009808EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C956BC4220481172009808EE /* NetworkingHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingHelper.swift; sourceTree = "<group>"; };
+		C9A9C9C12049119E00224609 /* TranslatorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorHelper.swift; sourceTree = "<group>"; };
+		C9E7112920481F870082C871 /* CryptoCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCurrency.swift; sourceTree = "<group>"; };
+		C9FE20C1204D348600B77BCE /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,58 @@
 		C956BC2A204810DD009808EE /* NetworkingSample */ = {
 			isa = PBXGroup;
 			children = (
-				C956BC2B204810DD009808EE /* AppDelegate.swift */,
-				C956BC2D204810DD009808EE /* ViewController.swift */,
-				C956BC2F204810DD009808EE /* Main.storyboard */,
+				C9E7112820481D540082C871 /* model */,
+				C956BC4120481157009808EE /* helpers */,
+				C956BC3F2048111B009808EE /* application */,
+				C956BC4020481138009808EE /* controllers */,
+				C956BC3D204810FB009808EE /* views */,
 				C956BC32204810DD009808EE /* Assets.xcassets */,
 				C956BC34204810DD009808EE /* LaunchScreen.storyboard */,
 				C956BC37204810DD009808EE /* Info.plist */,
 			);
 			path = NetworkingSample;
+			sourceTree = "<group>";
+		};
+		C956BC3D204810FB009808EE /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C956BC2F204810DD009808EE /* Main.storyboard */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C956BC3F2048111B009808EE /* application */ = {
+			isa = PBXGroup;
+			children = (
+				C956BC2B204810DD009808EE /* AppDelegate.swift */,
+			);
+			path = application;
+			sourceTree = "<group>";
+		};
+		C956BC4020481138009808EE /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C956BC2D204810DD009808EE /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C956BC4120481157009808EE /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C956BC4220481172009808EE /* NetworkingHelper.swift */,
+				C9A9C9C12049119E00224609 /* TranslatorHelper.swift */,
+				C9FE20C1204D348600B77BCE /* ImageHelper.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		C9E7112820481D540082C871 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C9E7112920481F870082C871 /* CryptoCurrency.swift */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +188,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C956BC4320481172009808EE /* NetworkingHelper.swift in Sources */,
 				C956BC2E204810DD009808EE /* ViewController.swift in Sources */,
+				C9A9C9C22049119E00224609 /* TranslatorHelper.swift in Sources */,
 				C956BC2C204810DD009808EE /* AppDelegate.swift in Sources */,
+				C9E7112A20481F870082C871 /* CryptoCurrency.swift in Sources */,
+				C9FE20C2204D348600B77BCE /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
